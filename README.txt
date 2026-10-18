@@ -1,5 +1,18 @@
-SETUP
-1. Open js/firebase-config.js and paste YOUR firebaseConfig values (keep the rest).
-2. Firebase Console > Realtime Database > Rules: paste database.rules.json, then Publish.
-3. VS Code: right-click index.html > Open with Live Server.
-Data is stored per user at users/<uid>/{certificates,nptel,competitions,profile}.
+# Student Achievement Tracker
+
+A web app where students record their certificates, NPTEL courses and competitions.
+
+**Live demo:** student-achievement-tracker26.netlify.app
+
+## Features
+- Register and login (Firebase Authentication)
+- Dashboard with totals and recent achievements
+- Add, edit, delete and search records for Certificates, NPTEL courses and Competitions
+- Each student sees only their own data
+
+## Tech stack
+HTML, CSS, JavaScript, Firebase Authentication, Firebase Realtime Database, Netlify
+
+## Run locally
+Open the folder in VS Code and use the Live Server extension on `index.html`.
+Add your own Firebase config in `js/firebase-config.js`.
