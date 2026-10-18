@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="authwrap"><form class="authbox" id="authForm" data-mode="register">
+<h2>Create account</h2><p>Start tracking your achievements.</p>
+<label>Full name<input name="name" required></label>
+<label>Department<input name="department" placeholder="e.g. Computer Science"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Password<input name="password" type="password" minlength="6" required autocomplete="new-password"></label>
+<button type="submit">Create account</button><div class="msg" id="msg" role="alert"></div>
+<div class="alt">Already registered? <a href="login.html">Log in</a></div></form></div><script type="module" src="js/auth.js"></script></body></html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Competitions</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="side"></aside><main>
+<h1>Competitions</h1>
+<form class="panel" id="rec"><h3 id="formTitle"></h3><div class="fields"></div>
+<div class="row"><button type="submit">Save</button><button type="button" class="sec" id="cancel" hidden>Cancel edit</button></div></form>
+<section class="panel"><div class="tools"><h3><span id="count">0</span> records</h3><input id="q" type="search" placeholder="Search records"></div>
+<div class="tablewrap"><table><thead><tr id="head"></tr></thead><tbody id="rows"></tbody></table></div></section>
+</main></div>
+<script type="module">import { init } from "./js/records.js";
+init({node:"competitions",addLabel:"Add a competition",editLabel:"Edit competition",empty:"No competitions yet. Add one above.",fields:[
+{k:"event",label:"Event name",req:true},{k:"date",label:"Date",type:"date",req:true},
+{k:"result",label:"Result",type:"select",req:true,options:["Winner","Runner-up","Finalist","Participated"]},{k:"link",label:"Certificate link",type:"url"}]});</script></body></html>

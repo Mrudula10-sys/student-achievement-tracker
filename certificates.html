@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Certificates</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="side"></aside><main>
+<h1>Certificates</h1>
+<form class="panel" id="rec"><h3 id="formTitle"></h3><div class="fields"></div>
+<div class="row"><button type="submit">Save</button><button type="button" class="sec" id="cancel" hidden>Cancel edit</button></div></form>
+<section class="panel"><div class="tools"><h3><span id="count">0</span> records</h3><input id="q" type="search" placeholder="Search records"></div>
+<div class="tablewrap"><table><thead><tr id="head"></tr></thead><tbody id="rows"></tbody></table></div></section>
+</main></div>
+<script type="module">import { init } from "./js/records.js";
+init({node:"certificates",addLabel:"Add a certificate",editLabel:"Edit certificate",empty:"No certificates yet. Add your first one above.",fields:[
+{k:"title",label:"Certificate title",req:true,ph:"Python Workshop"},{k:"organization",label:"Issued by",req:true},
+{k:"date",label:"Date",type:"date",req:true},{k:"category",label:"Category",type:"select",req:true,options:["Workshop","Internship","Course","Hackathon","Other"]},
+{k:"number",label:"Certificate no."},{k:"link",label:"Drive link",type:"url"}]});</script></body></html>
